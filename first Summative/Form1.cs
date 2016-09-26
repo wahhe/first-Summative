@@ -15,7 +15,7 @@ namespace first_Summative
     {
         public TAURUS()
         {
-            InitializeComponent();
+            InitializeComponent();//
         }
 
         private void startbutton1_Click(object sender, EventArgs e)
