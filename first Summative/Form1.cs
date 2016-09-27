@@ -92,7 +92,7 @@ namespace first_Summative
             //write text
             Font drawFont = new Font("Georage", 16, FontStyle.Bold);
             formGraphics.DrawString("TAURUS.", drawFont, drawBrush, 20, 20);
-            formGraphics.DrawString("Those who are born between those dates have the following Taurus characteristics: ", drawFont, drawBrush, 20, 40);
+            formGraphics.DrawString(" ", drawFont, drawBrush, 20, 40);
 
 
 
