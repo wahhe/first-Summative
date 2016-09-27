@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TAURUS));
             this.startbutton1 = new System.Windows.Forms.Button();
             this.taurusTitleLabel = new System.Windows.Forms.Label();
+            this.descripitionLabel1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // startbutton1
@@ -56,18 +57,30 @@
             this.taurusTitleLabel.Text = "THE TAURUS";
             this.taurusTitleLabel.UseWaitCursor = true;
             // 
+            // descripitionLabel1
+            // 
+            this.descripitionLabel1.AutoSize = true;
+            this.descripitionLabel1.Font = new System.Drawing.Font("Linux Libertine Display G", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.descripitionLabel1.ForeColor = System.Drawing.SystemColors.Control;
+            this.descripitionLabel1.Location = new System.Drawing.Point(35, 287);
+            this.descripitionLabel1.Name = "descripitionLabel1";
+            this.descripitionLabel1.Size = new System.Drawing.Size(0, 18);
+            this.descripitionLabel1.TabIndex = 2;
+            // 
             // TAURUS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(639, 536);
+            this.Controls.Add(this.descripitionLabel1);
             this.Controls.Add(this.taurusTitleLabel);
             this.Controls.Add(this.startbutton1);
             this.Name = "TAURUS";
             this.Text = "TAURUS";
             this.UseWaitCursor = true;
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -75,6 +88,7 @@
 
         private System.Windows.Forms.Button startbutton1;
         protected internal System.Windows.Forms.Label taurusTitleLabel;
+        private System.Windows.Forms.Label descripitionLabel1;
     }
 }
 
