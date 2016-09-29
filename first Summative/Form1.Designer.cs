@@ -66,6 +66,7 @@
             this.descripitionLabel1.Name = "descripitionLabel1";
             this.descripitionLabel1.Size = new System.Drawing.Size(0, 18);
             this.descripitionLabel1.TabIndex = 2;
+            this.descripitionLabel1.UseWaitCursor = true;
             // 
             // TAURUS
             // 
@@ -76,9 +77,11 @@
             this.Controls.Add(this.descripitionLabel1);
             this.Controls.Add(this.taurusTitleLabel);
             this.Controls.Add(this.startbutton1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TAURUS";
             this.Text = "TAURUS";
             this.UseWaitCursor = true;
+            this.Load += new System.EventHandler(this.TAURUS_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

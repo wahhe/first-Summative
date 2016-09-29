@@ -31,14 +31,24 @@ namespace first_Summative
             //graphics objects
             Graphics formGraphics = this.CreateGraphics();
             Pen linePen = new Pen(Color.Lime, 2);
-            SolidBrush goldBrush = new SolidBrush(Color.Gold);
             Font tittleFont = new Font("Trajan Pro", 22, FontStyle.Bold);
-            SolidBrush yellowBrush = new SolidBrush(Color.LightGoldenrodYellow);
             Font bodyFont = new Font("Georage", 16, FontStyle.Bold);
-            
+            SolidBrush goldBrush = new SolidBrush(Color.Gold);
+            SolidBrush yellowBrush = new SolidBrush(Color.LightGoldenrodYellow);
+            SolidBrush orangeBrush = new SolidBrush(Color.Orange);
+            SolidBrush blueBrush = new SolidBrush(Color.Blue);
+            SolidBrush pinkBrush = new SolidBrush(Color.Pink);
+            SolidBrush grayBrush = new SolidBrush(Color.Gray);
+            SolidBrush chocolateBrush = new SolidBrush(Color.Chocolate);
+            SolidBrush brownBrush = new SolidBrush(Color.Brown);
+            SolidBrush redBrush = new SolidBrush(Color.Red);
 
             formGraphics.Clear(Color.Black);
 
+            //add sound
+            SoundPlayer player1 = new SoundPlayer(Properties.Resources._2ndsound);
+            player1.Play();
+            
             //draw spots
             Thread.Sleep(400);
             formGraphics.FillEllipse(goldBrush, 132, 40, 10, 10);
@@ -102,21 +112,21 @@ namespace first_Summative
             
             //add subtittle text
             Thread.Sleep(100);
-            formGraphics.DrawString("Governing element: Earth", bodyFont, goldBrush, 50, 260);
+            formGraphics.DrawString("Governing element: Earth", bodyFont, blueBrush, 50, 260);
             Thread.Sleep(100);
-            formGraphics.DrawString("Ruling planet: Venus", bodyFont, goldBrush, 50, 290);
+            formGraphics.DrawString("Ruling planet: Venus", bodyFont, orangeBrush, 50, 290);
             Thread.Sleep(100);
             formGraphics.DrawString("Quality: Fixed", bodyFont, goldBrush, 50, 320);
             Thread.Sleep(100);
-            formGraphics.DrawString("Polarity: Negative", bodyFont, goldBrush, 50, 350);
+            formGraphics.DrawString("Polarity: Negative", bodyFont, pinkBrush, 50, 350);
             Thread.Sleep(100);
-            formGraphics.DrawString("Period of Birth: (New Date)May 13 – June 21", bodyFont, goldBrush, 50, 380);
+            formGraphics.DrawString("Period of Birth: (New Date)May 13 – June 21", bodyFont, grayBrush, 50, 380);
             Thread.Sleep(100);
-            formGraphics.DrawString("Compatible Signs: Cancer, Virgo, Scorpio, Pisces", bodyFont, goldBrush, 50, 410);
+            formGraphics.DrawString("Compatible Signs: Cancer, Virgo, Scorpio, Pisces", bodyFont, chocolateBrush, 50, 410);
             Thread.Sleep(100);
-            formGraphics.DrawString("Incompatible Signs: Gemini, Leo, Libra, ", bodyFont, goldBrush, 50, 440);
+            formGraphics.DrawString("Incompatible Signs: Gemini, Leo, Libra, ", bodyFont,redBrush, 50, 440);
             Thread.Sleep(100);
-            formGraphics.DrawString("Variably compatible Signs: Scorpio", bodyFont, goldBrush, 50, 470);
+            formGraphics.DrawString("Variably compatible Signs: Scorpio", bodyFont, brownBrush, 50, 470);
 
             
 
@@ -129,6 +139,11 @@ namespace first_Summative
 
 
 
+
+        }
+
+        private void TAURUS_Load(object sender, EventArgs e)
+        {
 
         }
     }
