@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using System.Threading;
 using System.Media;
 
-//creat by WAH HE, 20160926, first summative
+//creat by WAH HE, 20160926, first summative //
 namespace first_Summative
 {
     public partial class TAURUS : Form
